@@ -267,6 +267,8 @@ a:visited {
     text-align: center;
     font-weight: normal;
     margin-bottom: 20px;
+    background-color: rgb(30, 30, 30);
+    opacity: 0.5;
   }
 
   &__content {
@@ -358,4 +360,18 @@ div.desc {
       background-color: aqua;
     }
   }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

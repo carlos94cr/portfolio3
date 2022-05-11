@@ -404,6 +404,8 @@ a:visited {
   text-align: center;
   font-weight: normal;
   margin-bottom: 20px;
+  background-color: #1e1e1e;
+  opacity: 0.5;
 }
 
 .trabajos__content {
@@ -532,5 +534,31 @@ div.desc {
   width: 70%;
   height: 400px;
   background-color: aqua;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  background-color: #1e1e1e;
+  color: white;
+  width: 100vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=index.css.map */
