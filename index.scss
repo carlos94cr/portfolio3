@@ -1,0 +1,361 @@
+@import "./responsive";
+
+html,
+body {
+  margin: 0;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  z-index: 99;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @include mobile {
+    flex-direction: row;
+  }
+
+  &__logo {
+    font-weight: white;
+    font-size: 40px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+    @include mobile {
+      flex-direction: row;
+    }
+
+    li {
+      font-size: 20px;
+      margin-bottom: 18px;
+
+      @include mobile {
+        margin-bottom: 0px;
+        margin-left: 20px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: white;
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  padding: 240px 120px;
+  background-image: url(./header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  &__img {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    text-align: center;
+
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  &__text2 {
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 0.2vw;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  &__text3 {
+    text-align: center;
+    line-height: 1vw;
+
+    @include mobile {
+      text-align: left;
+    }
+  }
+}
+
+.inicio-click,
+.sobre-mi-click,
+.curriculum-click,
+.trabajos-click,
+.contacto-click {
+  display: flex;
+  padding: 20px;
+  background-color: rgb(30, 30, 30);
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.sobre-mi {
+  display: flex;
+  padding: 240px 120px;
+  background-image: url(./sobre-mi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  &__resume {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__experience {
+    flex: 7;
+  }
+
+  &__video {
+    flex: 5;
+
+    div {
+      width: 70%;
+      height: 400px;
+      background-color: aqua;
+    }
+  }
+}
+
+.curriculum {
+  display: flex;
+  padding: 240px 120px;
+  background-image: url(./curriculum.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  &__resume {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__experience {
+    flex: 7;
+    background-color: rgb(30, 30, 30);
+    opacity: 0.9;
+  }
+
+  &__video {
+    flex: 5;
+
+    div {
+      width: 70%;
+      height: 400px;
+      background-color: aqua;
+    }
+  }
+}
+
+.experience {
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    flex: 4;
+
+    h5 {
+      width: 60%;
+    }
+  }
+
+  &__description {
+    flex: 8;
+  }
+}
+
+.trabajos {
+  display: flex;
+  padding: 240px 120px;
+  background-image: url(./trabajos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  &__resume {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__experience {
+    flex: 7;
+  }
+
+  &__video {
+    flex: 5;
+
+    div {
+      width: 70%;
+      height: 400px;
+      background-color: aqua;
+    }
+  }
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  background-color: rgb(30, 30, 30);
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.contacto {
+  display: flex;
+  padding: 240px 120px;
+  background-image: url(./contacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  &__resume {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+    background-color: rgb(30, 30, 30);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__experience {
+    flex: 7;
+  }
+
+  &__video {
+    flex: 5;
+
+    div {
+      width: 70%;
+      height: 400px;
+      background-color: aqua;
+    }
+  }
+}

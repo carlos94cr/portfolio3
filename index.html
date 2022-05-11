@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- Section Nav -->
+  <nav class="nav">
+    <div class="nav__logo">Portfolio</div>
+    <ul class="nav__links">
+      <li><a href="#inicio-click">Inicio</a></li>
+      <li><a href="#sobre-mi-click">Sobre Mi</a></li>
+      <li><a href="#curriculum-click">Currículum</a></li>
+      <li><a href="#trabajos-click">Trabajos</a></li>
+      <li><a href="#contacto-click">Contacto</a></li>
+    </ul>
+  </nav>
+  <!-- Section Header -->
+  <div id="inicio-click"></div>
+  <header class="header">
+    <div class="header__img">
+      <img src="./img.jpg" alt="" style="border-radius: 50%;">
+    </div>
+    <div class="header__text">
+      <h3>Hola!</h3>
+      <div class="header__text2">
+        <h1>Soy Carlos</h1>
+        <h3>de la Cruz Romero.</h3>
+      </div>
+      <h4>Y este es mi Portfolio.</h4>
+    </div>
+    <div class="header__text3">
+      <p>Técnico de Audiovisuales</p>
+      <p>y Full-Stack Developer.</p>
+    </div>
+  </header>
+  <main>
+    <div id="sobre-mi-click"></div>
+    <section class="sobre-mi" id="sobre-mi">
+      <div class="sobre-mi__resume">
+        <h1>SOBRE MI</h1>
+        <h4>
+          Técnico de Audiovisuales y futuro Full-Stack Developer. Apasionado de los deportes de montaña y la fotografía
+          de paisaje.
+        </h4>
+      </div>
+    </section>
+    <div id="curriculum-click"></div>
+    <section class="curriculum" id="curriculum">
+      <div class="curriculum__resume">
+        <h1>CURRÍCULUM</h1>
+      </div>
+      <div class="curriculum__content">
+        <div class="curriculum__experience">
+          <div class="experience__item">
+            <div class="experiencie__title">
+              <h5>Técnico de Audiovisuales</h5>
+              <p>2014 - Actualidad</p>
+            </div>
+            <div class="experience__description">
+              <h5>DRC SONIDO</h5>
+              <p>
+                Técnico de Audiovisuales en DRC SONIDO, empresa propia. Especializado en técnico de sonido en directo,
+                instalaciones fijas e iluminación LED.
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="experience__item">
+            <div class="experiencie__title">
+              <h5>Instalador LEDs</h5>
+              <p>2019 - 2022</p>
+            </div>
+            <div class="experience__description">
+              <h5>PROYEAUDIO S.L.</h5>
+              <p>
+                Instalaciones de LEDs para hoteles, discotecas, pubs...
+              </p>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </section>
+    <div id="trabajos-click"></div>
+    <section class="trabajos" id="trabajos">
+      <div class="trabajos__resume">
+        <h1>TRABAJOS</h1>
+        <h4>
+          Trabajos realizados como Técnico de Audiovisuales.
+        </h4>
+        <div class="trabajos__content">
+          <div class="gallery">
+            <a target="_blank" href="./gallery1.jpg">
+              <img src="./gallery1.jpg" width="600" height="400">
+            </a>
+            <div class="desc">IMAGEN 1</div>
+          </div>
+
+          <div class="gallery">
+            <a target="_blank" href="./gallery2.jpg">
+              <img src="./gallery2.jpg" width="600" height="400">
+            </a>
+            <div class="desc">IMAGEN 2</div>
+          </div>
+
+          <div class="gallery">
+            <a target="_blank" href="./gallery3.jpg">
+              <img src="./gallery3.jpg" width="600" height="400">
+            </a>
+            <div class="desc">IMAGEN 3</div>
+          </div>
+
+          <div class="gallery">
+            <a target="_blank" href="./gallery4.jpg">
+              <img src="./gallery4.jpg" width="600" height="400">
+            </a>
+            <div class="desc">IMAGEN 4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="contacto-click"></div>
+    <section class="contacto" id="contacto">
+      <div class="contacto__resume">
+        <h1>CONTACTAR</h1>
+        <h4>Introduce tus datos y tu consulta, te responderé lo antes posible.</h4>
+        <div>
+          <form class="contacto__form" action="" method="post">
+            <label>
+              <p>Nombre</p>
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              <p>Apellido</p>
+              <input type="text" name="surname" required>
+            </label>
+            <label>
+              <p>Email</p>
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              <p>Tipo de Consulta</p>
+              <select name="tipodeconsulta" required>
+                <option disabled selected value>-------</option>
+                <option value="contratacion">Contratación</option>
+                <option value="otra">Otra</option>
+              </select>
+            </label>
+            <label>
+              <p>Consulta</p>
+              <textarea name="consulta" id="" cols="30" rows="10"></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
